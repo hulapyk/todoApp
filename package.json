@@ -1,0 +1,33 @@
+{
+  "name": "boot_opgave",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "chart.js": "^2.9.3",
+    "install": "^0.13.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.4.0"
+  },
+  "browserslist": [
+    "last 1 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}
