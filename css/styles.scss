@@ -7,6 +7,11 @@ $highlight: #FFCD5D;
 $green: #21bc44;
 $white: #fff;
 
+@mixin rainbow(){
+    animation: rainbow 3s infinite; 
+    -webkit-animation: rainbow 3s infinite; 
+}
+
 *{
     box-sizing: border-box;
 }
@@ -100,3 +105,53 @@ body{
 .delete {
     display: none;
 }
+
+dialog{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    max-width: 500px;
+    border: none;
+    border-radius: 5px;
+
+    .dialog-button-group button{
+        color: $white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 30px;
+    }
+
+    .dialog-button-group button:focus{
+        outline-color: $highlight;
+    }
+
+    .dialog-question{
+        @include rainbow();
+    }
+
+    .dialog-button--false{
+        background: $primary;
+    }
+
+    .dialog-button--true{
+        background: $secondary;
+    }
+
+    &::backdrop{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+ @keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+ }
